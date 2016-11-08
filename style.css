@@ -1,0 +1,98 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #979797;
+  margin-top: 15px;
+}
+
+.bailey-logo {
+  width: 200px;
+  height: 60px;
+  margin-bottom: 10px;
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+
+.nav-top {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  position: relative;
+  top: -15px;
+}
+
+.social-icons > img {
+  margin: 10px;
+}
+
+.facebook-blue, .instagram-blue,
+.google-blue {
+  display: none;
+}
+
+.facebook, .instagram,
+.facebook-blue, .instagram-blue {
+  height: 25px;
+  width: 25px;
+}
+
+/*.facebook:hover, .instagram:hover,*/
+/*.google-plus:hover {*/
+  /*display: none;*/
+/*}*/
+
+.google-plus, .google-blue {
+  height: 20px;
+  width: 30px;
+  position: relative;
+  top: 2px;
+}
+
+.direction {
+  cursor: default;
+}
+
+.direction > a {
+  font-size: 12px;
+  font-family: "Lucida Grande", sans-serif;
+  color: #727272;
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.direction > a:hover {
+  color: #093272;
+}
+
+.jumbotron {
+  width: 95%;
+  height: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+  display: flex;
+}
+
+.hero-image > img {
+  width: 600px;
+  height: auto;
+}
+
+.hero-adj {
+  display: flex;
+  flex-direction: column;
+}
+
+.adj {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 48px;
+  color: #4A4A4A;
+  float: right;
+}
