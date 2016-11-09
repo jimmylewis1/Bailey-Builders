@@ -78,6 +78,8 @@
   margin: 30px auto;
   border-radius: 10px;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .hero-image > img {
@@ -85,9 +87,17 @@
   height: auto;
 }
 
-.hero-adj {
+.hero-adj, .services-list,
+.ti, .estimate, .lease,
+.design{
   display: flex;
   flex-direction: column;
+}
+
+.ti, .estimate, .lease,
+.design {
+  flex-direction: row;
+  align-items: center;
 }
 
 .adj {
@@ -95,4 +105,61 @@
   font-size: 48px;
   color: #4A4A4A;
   float: right;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-check {
+  width: 26px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.list-item {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 36px;
+  color: #4A4A4A;
+}
+
+.hero-title > .adj {
+  position: relative;
+  top: -80px;
+  left: -50px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #979797;
+}
+
+.address, .contact,
+.email {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 14px;
+  color: #4A4A4A;
+  text-align: center;
+  margin: 15px 0 15px 0;
+}
+
+.social-icons.footer {
+  top: 0;
+  border: none;
+}
+
+/*Contact*/
+
+.company-title, .company-address,
+.company-email, .company-phone-fax {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 20px;
+  color: #4A4A4A;
+}
+
+.company-title {
+  color: #093272;
 }
