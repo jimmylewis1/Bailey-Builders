@@ -191,7 +191,8 @@
   color: #093272;
 }
 
-.email > a, .company-email > a {
+.email > a, .company-email > a,
+.company-address > a {
   color: #4A4A4A;
 }
 
