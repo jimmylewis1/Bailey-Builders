@@ -94,6 +94,10 @@
   flex-direction: column;
 }
 
+.hero-adj {
+  align-items: flex-end;
+}
+
 .ti, .estimate, .lease,
 .design {
   flex-direction: row;
@@ -130,6 +134,10 @@
   left: -50px;
 }
 
+.hero-title > .adj.r {
+  left: -110px;
+}
+
 .footer {
   display: flex;
   justify-content: space-around;
@@ -147,8 +155,26 @@
 }
 
 .social-icons.footer {
+  display: flex;
+  align-items: initial;
   top: 0;
   border: none;
+}
+
+/*About*/
+
+.adj-small {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 32px;
+  color: #093272;
+  position: relative;
+  top: -30px;
+}
+
+.adj-small-desc {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 20px;
+  color: #4A4A4A
 }
 
 /*Contact*/
@@ -158,8 +184,22 @@
   font-family: "Lucida Grande", sans-serif;
   font-size: 20px;
   color: #4A4A4A;
+  margin: 10px;
 }
 
 .company-title {
   color: #093272;
+}
+
+.email > a, .company-email > a {
+  color: #4A4A4A;
+}
+
+.email > a:visited,
+.company-email > a:visited {
+  text-decoration: none;
+}
+
+.social-icons {
+  top: 0;
 }
