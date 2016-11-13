@@ -236,7 +236,7 @@
     top: 6px;
   }
 
-  .main-header, .nav-top {
+  .main-header, .nav-top, .mobile-nav-close {
     display: none;
   }
 
@@ -244,14 +244,15 @@
     display: flex;
   }
 
-  .mobile-nav {
+  .mobile-nav, .mobile-nav-close {
     position: relative;
     height: 100%;
     top: 7px;
     left: 220px;
   }
 
-  .fa.fa-bars {
+
+  .fa.fa-bars, .fa.fa-times {
     color: #093272;
   }
 
