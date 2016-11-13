@@ -246,12 +246,43 @@
 
   .mobile-nav {
     position: relative;
+    height: 100%;
     top: 7px;
     left: 220px;
   }
 
   .fa.fa-bars {
     color: #093272;
+  }
+
+  .mobile-nav-menu {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .mobile-nav-menu-item {
+    width: 100%;
+    border-bottom: 1px solid #979797;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .mobile-menu-li {
+    font-family: "Lucida Grande", sans-serif;
+    font-size: 20px;
+    color: #4A4A4A;
+    position: relative;
+    top: -10px;
+  }
+
+  .divider {
+    color: #979797;
   }
 
   .main-container {
