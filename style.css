@@ -237,7 +237,8 @@
 
 .company-name-mobile,
 .company-address-mobile,
-.company-email-mobile {
+.company-email-mobile,
+.company-contact-mobile {
   font-family: "Lucida Grande", sans-serif;
   font-size: 24px;
   color: #093272;
@@ -245,7 +246,8 @@
 }
 
 .company-address-mobile,
-.company-email-mobile {
+.company-email-mobile,
+.company-contact-mobile {
   font-size: 20px;
   text-align: center;
   color: #4A4A4A;
@@ -376,6 +378,10 @@
     margin-bottom: 10px;
   }
 
+  .jumbotron.mobile.contact {
+    height: 320px;
+  }
+
   .wrapper {
     margin-top: -25px;
     align-items: center;
@@ -433,5 +439,45 @@
     top: 40px;
   }
 
-}
+  .company-email-mobile > a {
+    color: #4A4A4A;
+  }
 
+  .company-email-mobile > a:visited {
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mobile-nav {
+    left: 170px;
+  }
+
+  .jumbotron.mobile {
+    height: 200px;
+  }
+
+  .adj {
+    font-size: 25px;
+  }
+
+  .jumbotron.mobile-long {
+    height: 230px;
+  }
+
+  .wrapper {
+    margin-top: -10px;
+  }
+
+  .list-item {
+    font-size: 22px;
+  }
+
+  .adj-small {
+    font-size: 22px;
+  }
+
+  .adj-small-desc {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}
