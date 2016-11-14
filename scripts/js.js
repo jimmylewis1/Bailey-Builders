@@ -1,3 +1,8 @@
+//Desktop
+
+
+
+//Mobile
 $(".mobile-nav").click(function() {
   $(".mobile-nav-menu").css("display", "flex");
   $(".mobile-nav").css("display", "none");
@@ -9,3 +14,4 @@ $(".mobile-nav-close").click(function() {
   $(".mobile-nav-close").css("display", "none");
   $(".mobile-nav").css("display", "flex");
 });
+

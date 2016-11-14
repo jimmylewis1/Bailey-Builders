@@ -227,6 +227,34 @@
   display: none;
 }
 
+.mobile-footer {
+  margin-top: 10px;
+}
+
+.wrapper.contact-mobile {
+  margin-top: 20px;
+}
+
+.company-name-mobile,
+.company-address-mobile,
+.company-email-mobile {
+  font-family: "Lucida Grande", sans-serif;
+  font-size: 24px;
+  color: #093272;
+  margin: 10px;
+}
+
+.company-address-mobile,
+.company-email-mobile {
+  font-size: 20px;
+  text-align: center;
+  color: #4A4A4A;
+}
+
+.social-icons.mobile {
+  margin: 10px;
+}
+
 /*Media Queries*/
 
 @media screen and (max-width: 375px){
@@ -248,7 +276,7 @@
     position: fixed;
     width: 100%;
     z-index: 5;
-    background-color: white;
+    background-color: rgba(255,255,255,0.9);
     top: 0px;
   }
 
@@ -265,7 +293,7 @@
 
   .mobile-nav-menu {
     width: 100%;
-    background-color: white;
+    background-color: rgba(255,255,255,0.9);
     position: fixed;
     z-index: 2;
     flex-direction: column;
@@ -350,6 +378,7 @@
 
   .wrapper {
     margin-top: -25px;
+    align-items: center;
   }
 
   .hero-title {
@@ -383,6 +412,25 @@
 
   .social-icons.footer {
     justify-content: center;
+  }
+
+  .adj-small {
+    font-size: 25px;
+  }
+
+  .adj-small-desc {
+    font-size: 15px;
+    text-align: center;
+    margin: 25px 10px 10px 10px;
+  }
+
+  .wrapper.about-mobile {
+    margin-top: -10px;
+  }
+
+  .experienced {
+    position: relative;
+    top: 40px;
   }
 
 }
