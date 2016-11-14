@@ -244,13 +244,20 @@
     display: flex;
   }
 
-  .mobile-nav, .mobile-nav-close {
+  .mobile-header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-color: white;
+    top: 0px;
+  }
+
+  .mobile-nav, .mobile-nav-close   {
     position: relative;
     height: 100%;
     top: 7px;
     left: 220px;
   }
-
 
   .fa.fa-bars, .fa.fa-times {
     color: #093272;
@@ -264,12 +271,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 32px;
+  }
+
+  .mobile-nav-menu > a {
+    width: 100%;
+    border-bottom: 1px solid #979797;
+  }
+
+  .mobile-nav-menu > a:active {
+    background-color: #D8D8D8;
+  }
+
+  .mobile-nav-menu > a:focus {
+    text-decoration: none;
   }
 
   .mobile-nav-menu-item {
-    width: 100%;
-    border-bottom: 1px solid #979797;
     text-align: center;
     margin: 10px;
   }
@@ -279,7 +297,7 @@
     font-size: 20px;
     color: #4A4A4A;
     position: relative;
-    top: -10px;
+    top: 0;
   }
 
   .divider {
@@ -292,9 +310,12 @@
 
   .mobile-content-container {
     display: block;
+    position: relative;
+    z-index: -1;
+    top: 42px;
   }
 
-  .jumbotron {
+  .jumbotron.mobile {
     width: 100%;
     border-radius: 0;
     margin-top: 10px;
@@ -320,7 +341,11 @@
   }
 
   .jumbotron.mobile-long {
+    width: 100%;
     height: 300px;
+    border-radius: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .wrapper {
