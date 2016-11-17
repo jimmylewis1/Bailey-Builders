@@ -216,6 +216,12 @@
   margin: 10px;
 }
 
+.contact-footer-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
 /*Mobile*/
 
 .mobile-header {
@@ -258,6 +264,10 @@
 }
 
 /*Media Queries*/
+
+@media screen and (max-width: 768px) {
+  
+}
 
 @media screen and (max-width: 414px) {
   .main-header, .nav-top, .mobile-nav-close {
