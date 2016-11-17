@@ -15,3 +15,7 @@ $(".mobile-nav-close").click(function() {
   $(".mobile-nav").css("display", "flex");
 });
 
+//TODO
+//nav menu disappears on scroll.
+//nav menu disappears when touched outside of menu.
+//nav menu option blue for page (desktop)
