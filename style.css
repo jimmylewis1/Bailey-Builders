@@ -26,14 +26,19 @@
   align-items: center;
 }
 
-.social-icons {
+.social-icons, .social-icons.footer {
   display: flex;
   position: relative;
-  top: -15px;
+  top: -5px;
 }
 
 .social-icons > a > img {
   margin: 10px;
+}
+
+.facebook-icons, .instagram-icons,
+.google-icons {
+  padding: 10px;
 }
 
 .facebook-blue, .instagram-blue,
@@ -77,10 +82,12 @@
 }
 
 .jumbotron {
+  background-color: #D8D8D8;
+  /*background-color: #C3C2C0;*/
   width: 95%;
   height: 500px;
   margin: 30px auto;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -89,6 +96,10 @@
 .hero-image > img {
   width: 600px;
   height: auto;
+}
+
+img {
+  image-orientation: from-image;
 }
 
 .hero-adj, .services-list,
@@ -134,7 +145,7 @@
 
 .hero-title > .adj {
   position: relative;
-  top: -80px;
+  top: -30px;
   left: -50px;
 }
 

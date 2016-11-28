@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="bailey">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,35 +16,41 @@
 
 <div class="main-header">
   <div class="logo">
-    <a href="index.html">
+    <a ui-sref="home">
       <img class="bailey-logo" src="images/logo.png">
     </a>
   </div>
   <div class="nav-top">
     <div class="social-icons">
-      <a target="_blank" href="#">
-        <img class="facebook" src="images/icon-facebook.png">
-      </a>
-      <a target="_blank" href="#">
-        <img class="instagram" src="images/icon-instagram.png">
-      </a>
-      <a target="_blank" href="#">
-        <img class="google-plus" src="images/icon-google-plus.png">
-      </a>
-      <a target="_blank" href="#">
-        <img class="facebook-blue" src="images/icon-facebook-blue.png">
-      </a>
-      <a target="_blank" href="#">
-        <img class="instagram-blue" src="images/icon-instagram-blue.png">
-      </a>
-      <a target="_blank" href="#">
-        <img class="google-blue" src="images/icon-google-blue.png">
-      </a>
+      <div class="facebook-icons">
+        <a target="_blank" href="#">
+          <img class="facebook" src="images/icon-facebook.png">
+        </a>
+        <a target="_blank" href="#">
+          <img class="facebook-blue" src="images/icon-facebook-blue.png">
+        </a>
+      </div>
+      <div class="instagram-icons">
+        <a target="_blank" href="#">
+          <img class="instagram" src="images/icon-instagram.png">
+        </a>
+        <a target="_blank" href="#">
+          <img class="instagram-blue" src="images/icon-instagram-blue.png">
+        </a>
+      </div>
+      <div class="google-icons">
+        <a target="_blank" href="#">
+          <img class="google-plus" src="images/icon-google-plus.png">
+        </a>
+        <a target="_blank" href="#">
+          <img class="google-blue" src="images/icon-google-blue.png">
+        </a>
+      </div>
     </div>
     <div class="direction">
-      <a title="Home" href="index.html">Home</a>
-      <a title="About" href="about.html">About</a>
-      <a title="Contact" href="contact.html">Contact</a>
+      <a title="Home" ui-sref="home" >Home</a>
+      <a title="About" ui-sref="about">About</a>
+      <a title="Contact" ui-sref="contact">Contact</a>
     </div>
   </div>
 </div>
@@ -88,71 +94,10 @@
     </div>
   </a>
 </div>
-<div class="main-container">
-  <div class="jumbotron">
-    <div class="hero-image">
-      <img src="/images/background-main.jpg">
-    </div>
-    <div class="hero-adj">
-      <span class="adj">Experienced.</span>
-      <span class="adj">Professional.</span>
-      <span class="adj">Individually beautiful.</span>
-    </div>
-  </div>
-  <div class="jumbotron">
-    <div class="wrapper">
-      <div class="hero-title">
-        <span class="adj">Commercial</span>
-      </div>
-      <div class="services-list">
-        <div class="ti">
-          <img class="icon-check" src="images/icon-check.png">
-          <span class="list-item">Tenant Improvement</span>
-        </div>
-        <div class="estimate">
-          <img class="icon-check" src="images/icon-check.png">
-          <span class="list-item">Estimating</span>
-        </div>
-        <div class="lease">
-          <img class="icon-check" src="images/icon-check.png">
-          <span class="list-item">Leasing</span>
-        </div>
-        <div class="design">
-          <img class="icon-check" src="images/icon-check.png">
-          <span class="list-item">Design Build</span>
-        </div>
-      </div>
-    </div>
-      <div class="hero-image">
-        <img src="/images/woodbury.jpg">
-      </div>
-  </div>
-  <div class="jumbotron">
-    <div class="hero-image">
-      <img src="/images/home-with-lawn.jpg">
-    </div>
-    <div class="wrapper">
-      <div class="hero-title">
-        <span class="adj r">Residential</span>
-      </div>
-      <div class="services-list">
-        <div class="ti">
-          <img class="icon-check" src="images/icon-check.png">
-          <span class="list-item">New Home Construction</span>
-        </div>
-        <div class="estimate">
-          <img class="icon-check" src="images/icon-check.png">
-          <span class="list-item">Remodels</span>
-        </div>
-        <div class="lease">
-          <img class="icon-check" src="images/icon-check.png">
-          <span class="list-item">Lending</span>
-        </div>
-        <div class="design">
-          <img class="icon-check" src="images/icon-check.png">
-          <span class="list-item">Development</span>
-        </div>
-      </div>
+<div class="main-container" ng-controller="mainCtrl">
+  <div ui-view="" class="view">
+    <div class="main-view" ng-show="$state.current.name === 'home'">
+
     </div>
   </div>
   <div class="footer">
@@ -168,18 +113,30 @@
       <a href="mailto:info@baileybuilders.com">info@baileybuilders.com</a>
     </div>
     <div class="social-icons footer">
-      <a target="_blank" href="#">
-        <img class="facebook" src="images/icon-facebook.png">
-      </a>
-      <a target="_blank" href="#">
-        <img class="instagram" src="images/icon-instagram.png">
-      </a>
-      <a target="_blank" href="#">
-        <img class="google-plus" src="images/icon-google-plus.png">
-      </a>
-      <img class="facebook-blue" src="images/icon-facebook-blue.png">
-      <img class="instagram-blue" src="images/icon-instagram-blue.png">
-      <img class="google-blue" src="images/icon-google-blue.png">
+      <div class="facebook-icons">
+        <a target="_blank" href="#">
+          <img class="facebook" src="images/icon-facebook.png">
+        </a>
+        <a target="_blank" href="#">
+          <img class="facebook-blue" src="images/icon-facebook-blue.png">
+        </a>
+      </div>
+      <div class="instagram-icons">
+        <a target="_blank" href="#">
+          <img class="instagram" src="images/icon-instagram.png">
+        </a>
+        <a target="_blank" href="#">
+          <img class="instagram-blue" src="images/icon-instagram-blue.png">
+        </a>
+      </div>
+      <div class="google-icons">
+        <a target="_blank" href="#">
+          <img class="google-plus" src="images/icon-google-plus.png">
+        </a>
+        <a target="_blank" href="#">
+          <img class="google-blue" src="images/icon-google-blue.png">
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -243,46 +200,17 @@
       </div>
     </div>
   </div>
-  <div class="mobile-footer">
-    <div class="logo">
-      <a href="index.html">
-        <img class="bailey-logo" src="images/logo.png">
-      </a>
-    </div>
-    <div class="mobile-address-contact">
-      <div class="address">
-        1881 West 900 North<br>
-        Lehi, Utah 84043
-      </div>
-      <div class="contact">
-        Phone: 801.766.1900<br>
-        Fax: 801.766.1901
-      </div>
-    </div>
-    <div class="email">
-      <a href="mailto:info@baileybuilders.com">info@baileybuilders.com</a>
-    </div>
-    <div class="social-icons footer">
-      <a target="_blank" href="#">
-        <img class="facebook" src="images/icon-facebook.png">
-      </a>
-      <a target="_blank" href="#">
-        <img class="instagram" src="images/icon-instagram.png">
-      </a>
-      <a target="_blank" href="#">
-        <img class="google-plus" src="images/icon-google-plus.png">
-      </a>
-      <img class="facebook-blue" src="images/icon-facebook-blue.png">
-      <img class="instagram-blue" src="images/icon-instagram-blue.png">
-      <img class="google-blue" src="images/icon-google-blue.png">
-    </div>
-  </div>
+
 
 
 </div>
 
+<script src="vendor/node_modules/angular/angular.js"></script>
+<script src="vendor/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="/vendor/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="scripts/app.js"></script>
+<script src="scripts/mainCtrl.js"></script>
 <script src="scripts/js.js"></script>
 </body>
 </html>
