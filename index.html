@@ -24,39 +24,32 @@
     <div class="social-icons">
       <div class="facebook-icons">
         <a target="_blank" href="#">
-          <img class="facebook" src="images/icon-facebook.png">
-        </a>
-        <a target="_blank" href="#">
-          <img class="facebook-blue" src="images/icon-facebook-blue.png">
+          <img class="facebook top" src="images/icon-facebook.png">
         </a>
       </div>
       <div class="instagram-icons">
         <a target="_blank" href="#">
           <img class="instagram" src="images/icon-instagram.png">
         </a>
-        <a target="_blank" href="#">
-          <img class="instagram-blue" src="images/icon-instagram-blue.png">
-        </a>
       </div>
       <div class="google-icons">
         <a target="_blank" href="#">
           <img class="google-plus" src="images/icon-google-plus.png">
-        </a>
-        <a target="_blank" href="#">
-          <img class="google-blue" src="images/icon-google-blue.png">
         </a>
       </div>
     </div>
     <div class="direction">
       <a title="Home" ui-sref="home" >Home</a>
       <a title="About" ui-sref="about">About</a>
+      <a title="Commercial" ui-sref="commercial">Commercial</a>
+      <a title="Residential" ui-sref="residential">Residential</a>
       <a title="Contact" ui-sref="contact">Contact</a>
     </div>
   </div>
 </div>
 <div class="mobile-header">
   <div class="logo">
-    <a href="index.html">
+    <a ui-sref="home">
       <img class="bailey-logo" src="images/logo.png">
     </a>
   </div>
@@ -68,27 +61,27 @@
   </div>
 </div>
 <div class="mobile-nav-menu">
-  <a href="index.html">
+  <a ui-sref="home">
     <div class="mobile-nav-menu-item">
         <span class="mobile-menu-li">Home</span>
     </div>
   </a>
-  <a href="about.html">
+  <a ui-sref="about">
     <div class="mobile-nav-menu-item">
         <span class="mobile-menu-li">About</span>
     </div>
   </a>
-  <!--<a href="#">-->
-    <!--<div class="mobile-nav-menu-item">-->
-        <!--<span class="mobile-menu-li">Commercial Projects</span>-->
-    <!--</div>-->
-  <!--</a>-->
-  <!--<a href="#">-->
-    <!--<div class="mobile-nav-menu-item">-->
-        <!--<span class="mobile-menu-li">Residential Projects</span>-->
-    <!--</div>-->
-  <!--</a>-->
-  <a href="contact.html">
+  <a ui-sref="commercial">
+    <div class="mobile-nav-menu-item">
+        <span class="mobile-menu-li">Commercial</span>
+    </div>
+  </a>
+  <a ui-sref="residential">
+    <div class="mobile-nav-menu-item">
+        <span class="mobile-menu-li">Residential</span>
+    </div>
+  </a>
+  <a ui-sref="contact">
     <div class="mobile-nav-menu-item">
         <span class="mobile-menu-li">Contact</span>
     </div>
@@ -96,9 +89,7 @@
 </div>
 <div class="main-container" ng-controller="mainCtrl">
   <div ui-view="" class="view">
-    <div class="main-view" ng-show="$state.current.name === 'home'">
-
-    </div>
+    <div class="main-view" ng-show="$state.current.name === 'home'"></div>
   </div>
   <div class="footer">
     <div class="address">
@@ -117,98 +108,25 @@
         <a target="_blank" href="#">
           <img class="facebook" src="images/icon-facebook.png">
         </a>
-        <a target="_blank" href="#">
-          <img class="facebook-blue" src="images/icon-facebook-blue.png">
-        </a>
       </div>
       <div class="instagram-icons">
         <a target="_blank" href="#">
           <img class="instagram" src="images/icon-instagram.png">
-        </a>
-        <a target="_blank" href="#">
-          <img class="instagram-blue" src="images/icon-instagram-blue.png">
         </a>
       </div>
       <div class="google-icons">
         <a target="_blank" href="#">
           <img class="google-plus" src="images/icon-google-plus.png">
         </a>
-        <a target="_blank" href="#">
-          <img class="google-blue" src="images/icon-google-blue.png">
-        </a>
       </div>
     </div>
   </div>
-</div>
-
-<div class="mobile-content-container">
-  <div class="hero-image first">
-    <img src="/images/background-main.jpg">
-  </div>
-  <div class="jumbotron mobile">
-    <div class="hero-adj">
-      <span class="adj">Experienced.</span>
-      <span class="adj">Professional.</span>
-      <span class="adj">Individually beautiful.</span>
-    </div>
-  </div>
-  <div class="hero-image">
-    <img src="/images/woodbury.jpg">
-  </div>
-  <div class="jumbotron mobile-long">
-    <div class="wrapper">
-      <div class="hero-title">
-        <span class="adj">Commercial</span>
-      </div>
-      <div class="services-list">
-        <div class="ti">
-          <span class="list-item">Tenant Improvement</span>
-        </div>
-        <div class="estimate">
-          <span class="list-item">Estimating</span>
-        </div>
-        <div class="lease">
-          <span class="list-item">Leasing</span>
-        </div>
-        <div class="design">
-          <span class="list-item">Design Build</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="hero-image">
-    <img src="/images/home-with-lawn.jpg">
-  </div>
-  <div class="jumbotron mobile-long">
-    <div class="wrapper">
-      <div class="hero-title">
-        <span class="adj r">Residential</span>
-      </div>
-      <div class="services-list">
-        <div class="ti">
-          <span class="list-item">New Home Construction</span>
-        </div>
-        <div class="estimate">
-          <span class="list-item">Remodels</span>
-        </div>
-        <div class="lease">
-          <span class="list-item">Lending</span>
-        </div>
-        <div class="design">
-          <span class="list-item">Development</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
 </div>
 
 <script src="vendor/node_modules/angular/angular.js"></script>
 <script src="vendor/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/vendor/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="vendor/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="vendor/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 <script src="scripts/app.js"></script>
 <script src="scripts/mainCtrl.js"></script>
 <script src="scripts/js.js"></script>
