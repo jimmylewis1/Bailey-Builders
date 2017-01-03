@@ -78,7 +78,6 @@
 
 .jumbotron {
   background-color: #D8D8D8;
-  /*background-color: #C3C2C0;*/
   width: 95%;
   height: 500px;
   margin: 30px auto;
@@ -246,7 +245,8 @@ img {
 }
 
 .mobile-footer {
-  margin-top: 10px;
+  display: none;
+  margin-top: 60px;
 }
 
 .wrapper.contact-mobile {
@@ -275,6 +275,10 @@ img {
   margin: 10px;
 }
 
+.social-icons.footer {
+  right: 0;
+}
+
 /*Media Queries*/
 
 @media screen and (max-width: 1920px) {
@@ -290,7 +294,16 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .desktop-content-container {
+    display: none;
+  }
   .mobile-content-container {
+    display: block;
+  }
+  .footer {
+    display: none;
+  }
+  .mobile-footer {
     display: block;
   }
 }
@@ -325,6 +338,7 @@ img {
 
   .logo {
     margin-top: 5px;
+    margin-left: 10px;
   }
 
   .mobile-nav, .mobile-nav-close   {
@@ -358,7 +372,8 @@ img {
     background-color: #D8D8D8;
   }
 
-  .mobile-nav-menu > a:focus {
+  .mobile-nav-menu > a:focus,
+  .mobile-nav-menu > a:active {
     text-decoration: none;
   }
 
@@ -506,7 +521,7 @@ img {
 
   .mobile-header {
     position: fixed;
-    width: 100%;
+    width: 375px;
     z-index: 5;
     background-color: rgba(255,255,255,0.9);
     top: 0px;
@@ -528,7 +543,7 @@ img {
   }
 
   .mobile-nav-menu {
-    width: 100%;
+    width: 375px;
     background-color: rgba(255,255,255,0.9);
     position: fixed;
     z-index: 2;
