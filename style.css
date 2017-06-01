@@ -78,6 +78,7 @@
 
 .direction > a:hover {
   color: #093272;
+  text-decoration: underline;
 }
 
 .jumbotron {
@@ -169,7 +170,7 @@ img {
 
 .social-icons.footer {
   display: flex;
-  align-items: initial;
+  align-items: center;
   top: 0;
   border: none;
 }
@@ -301,6 +302,33 @@ img {
   .desktop-content-container {
     display: none;
   }
+  .hero-image,
+  .hero-image.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-image > img {
+    width: 95%;
+    border-radius: 5px;
+  }
+  .hero-title {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-adj {
+    align-items: center;
+  }
+  .hero-title > .adj {
+    left: 0;
+  }
+  .hero-title > .adj.r {
+    left: 0;
+  }
+  .services-list {
+    justify-content: center;
+    align-items: center;
+  }
   .mobile-content-container {
     display: block;
   }
@@ -309,6 +337,16 @@ img {
   }
   .mobile-footer {
     display: block;
+  }
+  .social-icons.footer {
+    justify-content: center;
+  }
+  .wrapper {
+    align-items: center;
+  }
+  .adj-small-desc {
+    padding: 2%;
+    text-align: center;
   }
 }
 
