@@ -86,6 +86,7 @@
   width: 95%;
   height: 500px;
   margin: 30px auto;
+  padding: 0 3% 0;
   border-radius: 5px;
   display: flex;
   justify-content: space-around;
@@ -128,6 +129,7 @@ img {
 .wrapper {
   display: flex;
   flex-direction: column;
+  margin: 5%;
 }
 
 .icon-check {
@@ -210,8 +212,8 @@ img {
   color: #4A4A4A;
 }
 
-.email > a:visited,
-.company-email > a:visited {
+.email > a:visited a:active,
+.company-email > a:visited a:active {
   text-decoration: none;
 }
 
@@ -219,6 +221,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 25%;
 }
 
 .social-icons.contact {
@@ -287,14 +290,121 @@ img {
 /*Media Queries*/
 
 @media screen and (max-width: 1920px) {
-  .jumbotron {
-    width: 75%;
+  .desktop-content-container {
+    margin: 6% 0 10% 0;
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1630px) {
+  .adj {
+    font-size: 38px;
+  }
+  .list-item {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1470px) {
+  .hero-image > img {
+    width: 550px;
+  }
+  .adj {
+    font-size: 33px;
+  }
+  .list-item {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1346px) {
   .jumbotron {
-    width: 95%;
+    height: 400px;
+  }
+  .hero-image > img {
+    width: 485px;
+  }
+  .adj {
+    font-size: 28px;
+  }
+  .list-item {
+    font-size: 20px;
+  }
+  .icon-check {
+    width: 16px;
+  }
+  .adj-small {
+    font-size: 24px;
+    top: -20px;
+  }
+  .adj-small-desc {
+    width: 85%;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .jumbotron {
+    height: 350px;
+  }
+  .hero-image > img {
+    width: 410px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .jumbotron {
+    height: 350px;
+  }
+  .hero-image > img {
+    width: 375px;
+  }
+  .adj {
+    font-size: 23px;
+  }
+  .list-item {
+    font-size: 17px;
+  }
+  .icon-check {
+    width: 13px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .jumbotron {
+    height: 300px;
+  }
+
+  .hero-image > img {
+    width: 350px;
+  }
+
+  .adj {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .jumbotron {
+    height: 270px;
+  }
+  .hero-image > img {
+    width: 300px;
+  }
+  .adj {
+    font-size: 20px;
+  }
+  .list-item {
+    font-size: 17px;
+  }
+  .icon-check {
+    width: 12px;
+  }
+  .adj-small {
+    font-size: 20px;
+    top: -10px;
+  }
+  .adj-small-desc {
+    font-size: 13px;
   }
 }
 
@@ -381,6 +491,11 @@ img {
   .logo {
     margin-top: 5px;
     margin-left: 10px;
+  }
+
+  .bailey-logo {
+    width: 168px;
+    height: 60px;
   }
 
   .mobile-nav, .mobile-nav-close   {
@@ -519,11 +634,12 @@ img {
   }
 
   .adj-small {
-    font-size: 25px;
+    font-size: 22px;
+    top: -22px;
   }
 
   .adj-small-desc {
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
     margin: 25px 10px 10px 10px;
   }
@@ -637,7 +753,7 @@ img {
     border-radius: 0;
     margin-top: 10px;
     margin-bottom: 10px;
-    height: 250px;
+    height: 200px;
   }
 
   .hero-image > img {
@@ -654,12 +770,12 @@ img {
 
   .adj {
     margin: 10px;
-    font-size: 32px;
+    font-size: 20px;
   }
 
   .jumbotron.mobile-long {
     width: 100%;
-    height: 300px;
+    height: 220px;
     border-radius: 0;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -670,7 +786,7 @@ img {
   }
 
   .wrapper {
-    margin-top: -25px;
+    margin-top: 10px;
     align-items: center;
   }
 
@@ -690,7 +806,7 @@ img {
   }
 
   .list-item {
-    font-size: 28px;
+    font-size: 15px;
     margin: 5px;
   }
 
@@ -708,11 +824,12 @@ img {
   }
 
   .adj-small {
-    font-size: 25px;
+    font-size: 21px;
+    top: -17px;
   }
 
   .adj-small-desc {
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
     margin: 25px 10px 10px 10px;
   }
@@ -723,7 +840,7 @@ img {
 
   .experienced {
     position: relative;
-    top: 40px;
+    top: 45px;
   }
 
   .company-email-mobile > a {
@@ -735,8 +852,15 @@ img {
   }
 }
 @media screen and (max-width: 320px) {
+  .mobile-nav-menu {
+    width: 100%;
+  }
   .mobile-nav {
     left: 170px;
+  }
+
+  .mobile-menu-li {
+    font-size: 16px;
   }
 
   .jumbotron.mobile {
@@ -751,8 +875,8 @@ img {
     height: 230px;
   }
 
-  .wrapper {
-    margin-top: -10px;
+  .experienced {
+    top: 37px;
   }
 
   .list-item {
@@ -760,11 +884,11 @@ img {
   }
 
   .adj-small {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .adj-small-desc {
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 20px;
   }
 }
