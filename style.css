@@ -494,15 +494,16 @@ img {
   }
 
   .bailey-logo {
-    width: 168px;
-    height: 60px;
+    width: 164px;
+    height: 54px;
+    top: 7px;
   }
 
   .mobile-nav, .mobile-nav-close   {
     position: relative;
     height: 100%;
-    top: 13px;
-    left: 160px;
+    top: 15px;
+    left: 180px;
   }
 
   .fa-2x {
@@ -688,8 +689,8 @@ img {
   .mobile-nav, .mobile-nav-close   {
     position: relative;
     height: 100%;
-    top: 7px;
-    left: 220px;
+    top: 10px;
+    left: 215px;
   }
 
   .fa.fa-bars, .fa.fa-times {
@@ -856,9 +857,13 @@ img {
     width: 100%;
   }
   .mobile-nav {
-    left: 170px;
+    top: 10px;
+    left: 165px;
   }
-
+  .mobile-nav-close {
+    top: 8px;
+    left: 165px;
+  }
   .mobile-menu-li {
     font-size: 16px;
   }
