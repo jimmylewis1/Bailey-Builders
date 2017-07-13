@@ -367,6 +367,12 @@ img {
   .icon-check {
     width: 13px;
   }
+  .company-title, .company-address, .company-email, .company-phone-fax {
+    font-size: 16px;
+  }
+  .social-icons.contact {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -567,6 +573,16 @@ img {
     height: 250px;
   }
 
+  .jumbotron.mobile.commercial {
+    height: 180px;
+    padding-top: 45px;
+  }
+
+  .jumbotron.mobile.residential {
+    height: 200px;
+    padding-top: 45px;
+  }
+
   .hero-image > img {
     width: 100%;
   }
@@ -586,7 +602,7 @@ img {
 
   .jumbotron.mobile-long {
     width: 100%;
-    height: 300px;
+    height: 350px;
     border-radius: 0;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -614,6 +630,7 @@ img {
 
   .services-list {
     align-items: center;
+    text-align: center;
   }
 
   .list-item {
