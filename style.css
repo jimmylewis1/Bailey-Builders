@@ -575,12 +575,12 @@ img {
 
   .jumbotron.mobile.commercial {
     height: 180px;
-    padding-top: 45px;
+    padding-top: 17px;
   }
 
   .jumbotron.mobile.residential {
     height: 200px;
-    padding-top: 45px;
+    padding-top: 17px;
   }
 
   .hero-image > img {
@@ -606,6 +606,10 @@ img {
     border-radius: 0;
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  .jumbotron.mobile-long.commercial {
+    height: 300px;
   }
 
   .jumbotron.mobile.contact {
@@ -766,12 +770,20 @@ img {
     top: 42px;
   }
 
+  .mobile-content-container.contact {
+    transform: translateY(-9px);
+  }
+
   .jumbotron.mobile {
     width: 100%;
     border-radius: 0;
     margin-top: 10px;
     margin-bottom: 10px;
     height: 200px;
+  }
+
+  .jumbotron.mobile-long.residential, .jumbotron.mobile-long.about {
+    height: 300px;
   }
 
   .hero-image > img {
@@ -804,7 +816,7 @@ img {
   }
 
   .wrapper {
-    margin-top: 10px;
+    margin-top: 30px;
     align-items: center;
   }
 
@@ -858,7 +870,7 @@ img {
 
   .experienced {
     position: relative;
-    top: 45px;
+    transform: translateY(-15px);
   }
 
   .company-email-mobile > a {
